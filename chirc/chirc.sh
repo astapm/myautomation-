@@ -47,7 +47,7 @@ sep_replace="\u003B"
 checkFormatCSV(){  
   temp=${1//$2/$3}            # меняем разделитель CSV
   temp=${temp//\"/\'}         # меняем двойную кавычку
-  temp=${temp//\n/\\u000A}    # меняем перевод строки
+  temp=${temp//"\n"/\\u000A}    # меняем перевод строки
   echo ${temp}
 }
 
