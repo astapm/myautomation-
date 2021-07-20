@@ -38,9 +38,9 @@ then
     do
       spaces+=" "
     done
-    echo "$spaces$1"
+    echo -n "$spaces$1"
     else
-    echo "$1"
+    echo -n "$1"
   fi
 # Если ширина поля положительная
 elif [[ $2 = *[[:digit:]]* ]] && [[ $2 -gt 0 ]]
@@ -53,12 +53,12 @@ then
     do
       spaces+=" "
     done
-    echo "$1$spaces"
+    echo -n "$1$spaces"
     else
-    echo "$1"
+    echo -n "$1"
   fi
 else
-echo "$1"
+echo -n "$1"
 fi
 }
 
