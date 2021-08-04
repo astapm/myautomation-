@@ -19,7 +19,7 @@ do
   for var in ${row[*]}
   do
     printf "${table_format[$count]} |" $var
-    count=$(($count + 1))
+    ((count++))
   done
   printf "\n"
 done
