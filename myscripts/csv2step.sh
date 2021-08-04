@@ -17,7 +17,7 @@ IFS=$CSVseparator
     do                         
     echo -n $prefix
     done
-  count=$(($count + 1))
+  ((count++))
   echo $var
   done
 done
